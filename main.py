@@ -54,13 +54,10 @@ while True:
         print(score)
     # Check for collisions
     if bird_y < 0 or bird_y > HEIGHT:
-        print("Game Over")
-        pygame.quit()
-        sys.exit()
+        bird_y = HEIGHT // 2 
+        score-=1
     if (bird_y<pipe_y or bird_y>pipe_y+100 )and (pipe_x<bird_x>pipe_x+pipe_width):
-        print("Game Over")
-        pygame.quit()
-        sys.exit()
+        score-=1        
     screen.fill(WHITE)
     pygame.draw.circle(screen, BLUE, (bird_x, int(bird_y)), bird_radius)
     pygame.draw.rect(screen, BLUE, (pipe_x, pipe_y - pipe_height, pipe_width, pipe_height))
