@@ -20,7 +20,7 @@ bird_radius = 20
 bird_velocity = 0
 
 # Gravity
-gravity = 0.5
+gravity = 0.5#um wie viel pixel der Bird nach unten fällt
 
 # Bird jump strength
 jump_strength = -5
@@ -42,11 +42,11 @@ while True:
                 bird_velocity = jump_strength
 
     # Update bird position
-    bird_velocity += gravity
-    bird_y += bird_velocity
+    bird_velocity += gravity #addieren weil oben Null ist 
+    bird_y += bird_velocity # bird geht nach oben 
 
     # Update pipe position
-    pipe_x -= 5
+    pipe_x -= 5#pipe wird nach links verschoben links ist null 
     if pipe_x < -pipe_width:
         pipe_x = WIDTH
         pipe_y = HEIGHT // 2
