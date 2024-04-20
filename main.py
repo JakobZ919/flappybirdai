@@ -13,7 +13,7 @@ pygame.display.set_caption("Flappy Bird")
 WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
 
-class bird():
+class bird:
     bird_x = 100
     bird_y = HEIGHT // 2
     bird_radius = 20
