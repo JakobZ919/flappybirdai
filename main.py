@@ -13,6 +13,7 @@ WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
 
 class bird:
+def __init__() :
     bird_x = 100
     bird_y = HEIGHT // 2
     bird_radius = 20
