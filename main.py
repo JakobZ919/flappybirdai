@@ -23,7 +23,7 @@ def __init__() :
 gravity = 0.5
 
 # Bird jump strength
-jump_strength = -5
+jump_strength = -1*5
 
 # Pipe properties
 pipe_width = 50
